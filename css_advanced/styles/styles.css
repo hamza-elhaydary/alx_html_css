@@ -1,18 +1,19 @@
-/* Reset default margins and paddings */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body and fonts */
+/* Global */
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #fff;
   color: #161616;
+  line-height: 1.6;
 }
 
-/* Header nav */
+/* Header */
 header {
   background-color: #fff;
   padding: 20px 60px;
@@ -41,7 +42,7 @@ nav ul li a {
 }
 
 /* Hero Section */
-main > section:first-of-type {
+.hero {
   background-image: url('../images/Bitmap.png');
   background-size: cover;
   background-position: center;
@@ -50,19 +51,19 @@ main > section:first-of-type {
   color: white;
 }
 
-main > section:first-of-type h1 {
+.hero h1 {
   font-size: 60px;
   margin-bottom: 30px;
 }
 
-main > section:first-of-type span {
+.hero span {
   display: inline-block;
   margin: 0 10px;
   font-size: 20px;
   font-weight: bold;
 }
 
-main > section:first-of-type button {
+.hero button {
   margin-top: 30px;
   padding: 15px 40px;
   font-size: 18px;
@@ -74,18 +75,102 @@ main > section:first-of-type button {
   cursor: pointer;
 }
 
-/* ✅ Responsive Design */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
+/* Quote Section */
+.quote {
+  padding: 60px;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+}
 
-  main > section:first-of-type {
-    padding: 60px 20px;
-  }
+/* Videos Section */
+.videos {
+  padding: 60px;
+  background-color: #fff;
+}
 
-  main > section:first-of-type h1 {
-    font-size: 36px;
-  }
+.videos h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.video-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  max-width: 300px;
+  text-align: center;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Membership Section */
+.membership {
+  padding: 60px;
+  background-color: #C271FF;
+  color: white;
+  text-align: center;
+}
+
+.membership h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.membership button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #C271FF;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 60px;
+  background-color: #f9f9f9;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  color: #C271FF;
+}
+
+.faq-item p {
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #161616;
+  color: white;
+  text-align: center;
 }
